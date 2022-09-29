@@ -38,6 +38,9 @@
    <link href="{{asset('frontend/css/base.scss.css')}}" rel="stylesheet" type="text/css" />
    <link rel="preload" as="style" type="text/css" href="{{asset('frontend/css/ant-land.scss.css')}}" onload="this.rel='stylesheet'" />
    <link href="{{asset('frontend/css/ant-land.scss.css')}}" rel="stylesheet" type="text/css" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet">
    <link rel="preload" as="script" href="{{asset('frontend/js/jquery-2.2.3.min.js')}}" />
    <script src="{{asset('frontend/js/jquery-2.2.3.min.js')}}" type="text/javascript"></script>
 </head>
