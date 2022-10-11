@@ -201,7 +201,7 @@ $imgs = json_decode($product->images);
                         <div class="home-title">
                            <h2><a href="{{route('allListProCate', ['cate'=>$product->cate_slug])}}" class="text-uppercase">Dự án liên quan</a></h2>
                         </div>
-                        <div class="section-tour-owl owl-carousel not-dqowl products-view-grid margin-top-10" data-md-items="5" data-sm-items="4" data-xs-items="2" data-margin="10">
+                        <div class="section-tour-owl owl-carousel not-dqowl products-view-grid margin-top-10">
                            @foreach ($productlq as $pro)
                            @if ($pro->id != $product->id)
                            <div class="item">

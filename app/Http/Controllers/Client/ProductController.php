@@ -16,7 +16,7 @@ class ProductController extends Controller
 {
     public function allProduct()
     {
-        $data['list'] = Product::where(['status'=>1])->orderBy('id','DESC')->select('id','category','name','discount','price','images','slug','cate_slug','type_slug')
+        $data['list'] = Product::where(['status'=>1])->orderBy('id','DESC')->select('id','category','name','discount','price','images','slug','cate_slug','type_slug', 'sku', 'origin', 'species', 'thickness')
         ->paginate(12);
         $data['title'] = "Tất cả sản phẩm";
         return view('product.list',$data);
@@ -26,7 +26,7 @@ class ProductController extends Controller
     {
         $data['list'] = Product::where(['status'=>1,'cate_slug'=>$danhmuc])
         ->orderBy('id','DESC')
-        ->select('id','category','name','discount','price','images','slug','cate_slug','type_slug','description')
+        ->select('id','category','name','discount','price','images','slug','cate_slug','type_slug','description', 'sku', 'origin', 'species', 'thickness')
         ->paginate(12);
         $data['cateno'] = Category::where('slug',$danhmuc)->first(['id','name','avatar','content','slug']);
         $cate_id = $data['cateno']->id;
@@ -38,7 +38,7 @@ class ProductController extends Controller
     public function allListType($danhmuc,$loaidanhmuc){
         $data['list'] = Product::where(['status'=>1,'cate_slug'=>$danhmuc,'type_slug'=>$loaidanhmuc])
         ->orderBy('id','DESC')
-        ->select('id','category','name','discount','price','images','slug','cate_slug','type_slug','description')
+        ->select('id','category','name','discount','price','images','slug','cate_slug','type_slug','description', 'sku', 'origin', 'species', 'thickness')
         ->paginate(12);
         $data['pronew'] = Product::where('status',1)->orderBy('id','DESC')->select('id','category','name','discount','price','images','slug','cate_slug','type_slug')
         ->paginate(5);
@@ -52,7 +52,7 @@ class ProductController extends Controller
     public function allListTypeTwo($danhmuc,$loaidanhmuc,$thuonghieu){
         $data['list'] = Product::where(['status'=>1,'cate_slug'=>$danhmuc,'type_slug'=>$loaidanhmuc,'type_two_slug'=>$thuonghieu])
             ->orderBy('id','DESC')
-            ->select('id','category','name','discount','price','images','slug','cate_slug','type_slug','description')
+            ->select('id','category','name','discount','price','images','slug','cate_slug','type_slug','description', 'sku', 'origin', 'species', 'thickness')
             ->paginate(12);
         $data['type'] = TypeProductTwo::where('slug',$thuonghieu)->first(['id','name','cate_id','content']);
         $cate_id = $data['type']->cate_id;
@@ -184,7 +184,7 @@ class ProductController extends Controller
             },
         ])->where(['slug'=>$slug, 'status'=>1])->first(['id','name','images','type_cate','category','sku','discount','price','content','size','description','slug','preserve','cate_slug','type_slug','status']);
         $data['news'] = Blog::where('status',1)->limit(8)->get(['id','title','image','description','created_at','slug']);
-        $data['productlq'] = Product::where(['cate_slug'=>$cate, 'status'=>1])->get(['id','name','images','discount','price','slug','cate_slug','type_slug','description']);
+        $data['productlq'] = Product::where(['cate_slug'=>$cate, 'status'=>1])->get(['id','name','images','discount','price','slug','cate_slug','type_slug','description', 'sku', 'origin', 'species', 'thickness']);
         $viewoldpro = session()->get('viewoldpro', []);
 
         if(isset($viewoldpro[$slug])) {
