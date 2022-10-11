@@ -74,7 +74,7 @@ Giới thiệu về {{$setting->company}}
             <div class="item">
                <div class="key key_1"></div>
                <div class="value value_2">
-                  <p>Với những kinh nghiệm lâu năm trong lĩnh vực tư vấn thi công kiến trúc, Vking luôn tâm niệm mang đến cho Khách Hàng chất lượng sản phẩm tốt nhất.</p>
+                  <p>Với những kinh nghiệm lâu năm trong lĩnh vực tư vấn thi công kiến trúc, A89Design luôn tâm niệm mang đến cho Khách Hàng chất lượng sản phẩm tốt nhất.</p>
                </div>
             </div>
             <div class="item">
@@ -84,7 +84,7 @@ Giới thiệu về {{$setting->company}}
             <div class="item">
                <div class="key key_1"></div>
                <div class="value value_2">
-                  <p>Với những kinh nghiệm lâu năm trong lĩnh vực tư vấn thi công kiến trúc, Vking luôn tâm niệm mang đến cho Khách Hàng chất lượng sản phẩm tốt nhất.</p>
+                  <p>Với những kinh nghiệm lâu năm trong lĩnh vực tư vấn thi công kiến trúc, A89Design luôn tâm niệm mang đến cho Khách Hàng chất lượng sản phẩm tốt nhất.</p>
                </div>
             </div>
             <div class="item">
@@ -94,7 +94,7 @@ Giới thiệu về {{$setting->company}}
             <div class="item">
                <div class="key key_1"></div>
                <div class="value value_2">
-                  <p>Với những kinh nghiệm lâu năm trong lĩnh vực tư vấn thi công kiến trúc, Vking luôn tâm niệm mang đến cho Khách Hàng chất lượng sản phẩm tốt nhất.</p>
+                  <p>Với những kinh nghiệm lâu năm trong lĩnh vực tư vấn thi công kiến trúc, A89Design luôn tâm niệm mang đến cho Khách Hàng chất lượng sản phẩm tốt nhất.</p>
                </div>
             </div>
          {{-- <div class="item">
