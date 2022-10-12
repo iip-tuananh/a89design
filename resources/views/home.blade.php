@@ -147,7 +147,7 @@
                <div class="container">
                <div class="row">
                   <div class="col-md-12">
-                     <div class="real-title-right">
+                     <div class="real-title">
                            <a href="{{route('allListProCate', ['cate'=>$cate->slug])}}" title="{{languageName($cate->name)}}">
                            {{-- <h3>Tiêu biểu</h3> --}}
                            <h2>{{languageName($cate->name)}}</h2>

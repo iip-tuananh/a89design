@@ -35,7 +35,7 @@
             <a class="navbar-brand logo-wrapper" href="{{route('home')}}">
             <img src="{{$setting->logo}}" data-lazyload="{{$setting->logo}}" alt="{{$setting->company}}" loading="lazy" />	
             </a>
-            <div class="mobile-contact visible-sm visible-xs">
+            <div class="mobile-contact visible-sm visible-xs hidden-sm hidden-xs">
                   <button class="btn-callmeback" type="button" onclick="window.location.href='{{route('lienHe')}}'">Liên hệ</button>
             </div>
          </div>
