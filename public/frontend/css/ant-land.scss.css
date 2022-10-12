@@ -389,3 +389,11 @@ color: #aaaaaa;
 text-decoration: none;
 cursor: pointer;
 }
+@media only screen and (max-width: 600px) {
+    .section_real_news .real-title h2, .section-news .real-title h2 {
+        font-size: 26px;
+    }
+    .section_about .welcome-title h2 {
+        font-size: 18px;
+    }
+}
