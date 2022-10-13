@@ -30,7 +30,7 @@
          <div class="row">
             <div class="col-lg-6 col-md-12 col-xs-12">
                <div class="welcome-title">
-                     <h2>Chào mừng đến <span>{{$setting->company}}</span></h2>
+                     <h2>Chào mừng đến CÔNG TY CỔ PHẦN KIẾN TRÚC VÀ NỘI THẤT <span style="color: #c96808">A89</span></h2>
                </div>
                <div class="welcome-content">
                      {!!$aboutUs->description!!}

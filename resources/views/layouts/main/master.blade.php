@@ -177,6 +177,10 @@
             <i class="fa fa-facebook-official" aria-hidden="true"></i>
             <span>Chat qua Messenger</span>
             </a>
+            <a class="zalo" href="https://zalo.me/{{$setting->phone1}}" target="_blank">
+            <img src="{{url('frontend/images/zalo.png')}}" alt="Chat Zalo">
+            <span>Zalo: {{$setting->phone1}}</span>
+            </a>
             <a class="zalo" href="mailto:{{$setting->email}}" target="_blank">
             <i class="fa fa-envelope"></i>
             <span>{{$setting->email}}</span>
